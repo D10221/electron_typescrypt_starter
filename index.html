@@ -1,11 +1,91 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using io.js <script>document.write(process.version)</script>
-    and Electron <script>document.write(process.versions['electron'])</script>.
-  </body>
+<html ng-app="app" ng-strict-di="true">
+
+<head>
+    <title>Pan Galactic Gargle Blaster</title>
+    <link href="node_modules/material-design-lite-oob/res/material.min.css" rel="stylesheet" />
+    <style>
+        @font-face {
+            font-family: 'Material Icons';
+            font-style: normal;
+            font-weight: 400;
+            src: url('node_modules/material-design-lite-oob/res/iconfont/MaterialIcons-Regular.eot');
+            /* For IE6-8 */
+            src: local('Material Icons'), local('MaterialIcons-Regular'), url('node_modules/material-design-lite-oob/res/iconfont/MaterialIcons-Regular.woff2') format('woff2'), url('node_modules/material-design-lite-oob/res/iconfont/MaterialIcons-Regular.woff') format('woff'), url('node_modules/material-design-lite-oob/res/iconfont/MaterialIcons-Regular.ttf') format('truetype');
+        }
+        
+        .material-icons {
+            font-family: 'Material Icons', monospace;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- The drawer is always open in large screens. The header is always shown,  even in small screens. -->
+    <div ng-controller="AppController as vm" class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <!--<span class="mdl-layout-title">{{vm.brand}}</span>-->
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation -->
+                <nav class="mdl-navigation">                    
+                    <button class="mdl-button mdl-js-button mdl-button--icon" style="font-size:5px">
+                        <i class="material-icons">settings</i>
+                    </button>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <!--<span class="mdl-layout-title">{{vm.brand}}</span>-->
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">
+                    <i class="material-icons" style="margin:5px">folder_open</i> Open
+                </a>
+                <a class="mdl-navigation__link" href="">
+                    <i class="material-icons" style="margin:5px">power_settings_new</i> Exit 
+                </a>
+                
+            </nav>
+        </div>
+
+        <main class="mdl-layout__content">
+
+            <div class="page-content" ng-view>
+                
+            </div>
+
+        </main>
+        <footer class="mdl-mini-footer" style="padding:1px 1px">
+            <div class="mdl-mini-footer__left-section">
+
+            </div>
+            <div class="mdl-mini-footer__right-section">
+                <!--<button class="mdl-mini-footer__social-btn">1</button>
+                <button class="mdl-mini-footer__social-btn">2</button>                -->
+                <button class="mdl-button mdl-js-button mdl-button--icon" style="font-size:5px">
+                    <i class="material-icons">mood</i>
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <!--Scripts-->
+    <script src="node_modules/material-design-lite-oob/res/material.min.js"></script>
+    <!--<script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>-->
+    <script src="built/app.js"></script>
+</body>
+
 </html>

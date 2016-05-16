@@ -1,7 +1,7 @@
 {
-  "name"    : "MyAppV0.1",
-  "version" : "0.0.0",
-  "main"    : "built/main.js",
+  "name": "MyAppV0.1",
+  "version": "0.0.0",
+  "main": "built/main.js",
   "devDependencies": {
     "electron-prebuilt": "^0.26"
   },
@@ -9,6 +9,12 @@
     "start": "electron built/main.js",
     "debug": "electron --debug .",
     "build": "tsc -p .",
-    "test" : "#echo Not Implemented"
+    "test": "#echo Not Implemented"
+  },
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-route": "^1.5.5",
+    "lodash": "^4.12.0",
+    "rx": "^4.1.0"
   }
 }
