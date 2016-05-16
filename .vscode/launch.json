@@ -1,17 +1,20 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-    {
-	"name": "Launch main.js",
-	"type": "node",
-	"program": "${workspaceRoot}/main.js",
-	"stopOnEntry": false,
-	"args": [],
-	"cwd": "${workspaceRoot}/.",
-	"runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron.cmd",
-	"runtimeArgs": [],
-	"env": { },
-	"sourceMaps": false,
-	"outDir": null
-   }]
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch main.js",
+			"type": "node",
+			"program": "${workspaceRoot}/built/main.js",
+			"stopOnEntry": false,
+			"args": [],
+			"cwd": "${workspaceRoot}/.",
+			"runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron.cmd",
+			"runtimeArgs": [
+				"--debug"
+			],
+			"env": {},
+			"sourceMaps": false,
+			"outDir": null
+		}
+	]
 }
