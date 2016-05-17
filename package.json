@@ -1,12 +1,12 @@
 {
   "name": "MyAppV0.1",
   "version": "0.0.0",
-  "main": "built/main.js",
+  "main": "main.js",
   "devDependencies": {
-    "electron-prebuilt": "^0.26"
+    "electron-prebuilt": "^1.1.0"
   },
   "scripts": {
-    "start": "electron built/main.js",
+    "start": "electron .",
     "debug": "electron --debug .",
     "build": "tsc -p .",
     "test": "#echo Not Implemented"

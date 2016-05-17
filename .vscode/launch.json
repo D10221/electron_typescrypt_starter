@@ -2,13 +2,13 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "Launch main.js",
+			"name": "Launch main",
 			"type": "node",
-			"program": "${workspaceRoot}/built/main.js",
+			"program": "${workspaceRoot}/main.js",
 			"stopOnEntry": false,
 			"args": [],
 			"cwd": "${workspaceRoot}/.",
-			"runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron",
+			"runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron.cmd",
 			"runtimeArgs": [
 				"--debug"
 			],
