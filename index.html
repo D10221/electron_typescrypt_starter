@@ -3,71 +3,10 @@
 
 <head>
     <title>Pan Galactic Gargle Blaster</title>
-    <link href="node_modules/material-design-lite-oob/dist/material.min.css" rel="stylesheet" />
-    <link href="styles/styles.css" rel="stylesheet"/>
 </head>
 
 <body>
-    <!-- The drawer is always open in large screens. The header is always shown,  even in small screens. -->
-    <div ng-controller="AppController as vm" class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-        <header class="mdl-layout__header">
-            <div class="mdl-layout__header-row">
-                <!-- Title -->
-                <!--<span class="mdl-layout-title">{{vm.brand}}</span>-->
-                <!-- Add spacer, to align navigation to the right -->
-                <div class="mdl-layout-spacer"></div>
-                <!-- Navigation -->
-                <nav class="mdl-navigation">                    
-                    <button class="mdl-button mdl-js-button mdl-button--icon" style="font-size:5px">
-                        <i class="material-icons">settings</i>
-                    </button>
-                </nav>
-            </div>
-        </header>
-        <div class="mdl-layout__drawer">
-            <!--<span class="mdl-layout-title">{{vm.brand}}</span>-->
-            <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="">
-                    <i class="material-icons" style="margin:5px">folder_open</i> Open
-                </a>
-                 <a class="mdl-navigation__link" href="">
-                    <i class="material-icons" style="margin:5px">save</i> Save
-                </a>
-                <a class="mdl-navigation__link" href="">
-                    <i class="material-icons" style="margin:5px">power_settings_new</i> Exit 
-                </a>
-                
-            </nav>
-        </div>
-
-        <main class="mdl-layout__content">
-
-            <div class="page-content" ng-view>
-                
-            </div>
-
-        </main>
-        <footer class="mdl-mini-footer" style="padding:1px 1px">
-            <div class="mdl-mini-footer__left-section">
-
-            </div>
-            <div class="mdl-mini-footer__right-section">
-                <!--<button class="mdl-mini-footer__social-btn">1</button>
-                <button class="mdl-mini-footer__social-btn">2</button>                -->
-                <button class="mdl-button mdl-js-button mdl-button--icon" style="font-size:5px">
-                    <i class="material-icons icon-small">bug_report</i>
-                </button>
-                <button class="mdl-button mdl-js-button mdl-button--icon" style="font-size:5px">
-                    <i class="material-icons icon-small">message</i>
-                </button>
-            </div>
-        </footer>
-    </div>
-
-    <!--Scripts-->
-    <script src="node_modules/material-design-lite-oob/dist/material.min.js"></script>
-    <!--<script src="node_modules/angular/angular.js"></script>
-    <script src="node_modules/angular-route/angular-route.js"></script>-->
+    
     <script src="built/app.js"></script>
 </body>
 

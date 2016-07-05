@@ -9,16 +9,11 @@
     "start": "electron .",
     "debug": "electron --debug .",
     "build": "tsc -p .",
-    "test": "#echo Not Implemented"
+    "test": "#echo Not Implemented",
+    "clean": "rm -rf built"
   },
   "dependencies": {
-    "angular": "^1.5.5",
-    "angular-route": "^1.5.5",
     "electron-prebuilt": "^1.2.5",
-    "install": "^0.8.1",
-    "lodash": "^4.12.0",
-    "material-design-lite-oob": "git+https://github.com/D10221/material-design-lite-oob.git",
-    "npm": "^3.10.3",
-    "rx": "^4.1.0"
+    "npm": "^3.10.3"
   }
 }
