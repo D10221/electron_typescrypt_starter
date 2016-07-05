@@ -1,0 +1,8 @@
+{
+  "globalDependencies": {
+    "angular": "registry:dt/angular#1.5.0+20160627105203",
+    "github-electron": "registry:dt/github-electron#1.2.5+20160624085047",
+    "jquery": "registry:dt/jquery#1.10.0+20160704162008",
+    "node": "registry:env/node#6.0.0+20160622202520"
+  }
+}
