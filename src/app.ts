@@ -1,24 +1,19 @@
-(()=> {
-    var angular = require('angular');
+var angular = require('angular');
 
-    var ngRoute = require('angular-route');
+var ngRoute = require('angular-route');
 
-    console.log(ngRoute);
+class AppController {
 
-    class AppController {
+    static $inject = ['$scope'];
 
-        static $inject = ['$scope'];
+    brand = 'tiny-x';
 
-        brand = 'tiny-x';
+    constructor($scope) {
 
-        constructor($scope) {
-
-        }
     }
+}
 
-    angular.module('app', [
-        'ngRoute'
-    ])
-        .controller('AppController', AppController);
-
-})();
+angular.module('app', [
+    'ngRoute'
+])
+    .controller('AppController', AppController);

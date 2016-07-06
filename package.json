@@ -1,5 +1,5 @@
 {
-  "name": "MyAppV0.1",
+  "name": "myapp",
   "version": "0.0.0",
   "main": "main.js",
   "devDependencies": {
@@ -14,11 +14,10 @@
   "dependencies": {
     "angular": "^1.5.5",
     "angular-route": "^1.5.5",
-    "electron-prebuilt": "^1.2.5",
+    "electron-prebuilt": "^1.2.6",
     "install": "^0.8.1",
-    "lodash": "^4.12.0",
-    "material-design-lite-oob": "git+https://github.com/D10221/material-design-lite-oob.git",
+    "lodash": "^4.12.0",    
     "npm": "^3.10.3",
-    "rx": "^4.1.0"
+    "rxjs": "^5.0.0-beta.10"
   }
 }
